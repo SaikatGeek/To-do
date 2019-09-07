@@ -1,7 +1,7 @@
 @extends('layouts.app')
  
 @section('content')
-    @if ($errors->any())
+    @if ($errors->any())  
         <div class="alert alert-danger">
             {{ $errors }}
         </div>

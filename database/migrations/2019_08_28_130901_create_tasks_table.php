@@ -24,7 +24,7 @@ class CreateTasksTable extends Migration
                 $table->boolean('completed')->default(false);
                 $table->timestamps();
             });
-        }
+        } 
 
 
     }

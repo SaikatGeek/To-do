@@ -12,6 +12,7 @@ use App\Task;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
 // Let homepage be the todo list
 Route::get('/','TaskController@index');
@@ -27,7 +28,7 @@ Route::get('tasks/completed/{id}', function ($id) {
 
     return redirect('/')->with('success', 'Task has been completed');
 });
-Auth::routes();
+
 
 Route::get('/home', 'TaskController@index')->name('home');
 
